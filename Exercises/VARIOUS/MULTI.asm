@@ -1,0 +1,17 @@
+		ORG $0000
+
+	DATO	RMB	1
+
+		ORG $8000
+
+	LDAB	DATO
+	ANDB	#3
+	BNE		
+	
+SI	LDAA	#1
+	BRA		FIN
+
+NO	LDAA	#0
+	BRA		FIN	
+	
+FIN	BRA		FIN
